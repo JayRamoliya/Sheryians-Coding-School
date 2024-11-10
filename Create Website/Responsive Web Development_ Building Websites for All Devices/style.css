@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+.nav2{
+    display: flex;
+    gap: 4vw;
+}
+#nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+#nav h4{
+    font-size: 1vw;
+}
+
+
+@media (max-width:600px) {
+    #nav h2{
+        padding: 0 5vw;
+    }
+}
