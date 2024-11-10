@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animated Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <nav>
+            <div class="logo">
+                <a href="">Eco Bag</a>
+            </div>
+            <div class="hamburger">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><button class="login-btn">login</button></li>
+            </ul>
+        </nav>
+        <div class="socialicons">
+            <a href=""><img src="dribble.png"></a>
+            <a href=""><img src="telegram.png"></a>
+            <a href=""><img src="instagram.png"></a>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade")
+            })
+            hamburger.classList.toggle("toggle")
+        })
+    </script>
+</body>
+
+</html>
