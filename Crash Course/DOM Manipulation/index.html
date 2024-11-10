@@ -1,0 +1,112 @@
+<!-- JavaScript DOM Manipulation: How to DOMinate the DOM with JavaScript -->
+
+<!-- what is DOM ✔ (Document Object Model)-->
+
+<!-- Simple example of bulb or whatever clicking ✔ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        h1{
+            font-size: 70px;
+        }
+        #bulb{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 4px solid black;
+            background-color: white;
+        }
+        button{
+            padding: 10px 30px;
+            margin: 80px;
+            font-size: 20px;
+        }
+        #box{
+            height: 300px;
+            width: 300px;
+            border: 10px groove beige;
+        }
+        </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>Document Object Model</h1>
+
+    <div id="bulb">
+    </div>
+    <button>ON</button>
+
+    <div id="box">
+        <h1>inside box</h1>
+    </div>
+    
+    <script>
+        //  4 pillars of DOM ✔
+
+        // 1. selection of an element 
+        var a = document.querySelector('h1')
+        console.log(a);
+
+        // 2. changing HTML
+        a.innerHTML = 'inner html'
+
+        // 3. changing CSS
+        a.style.color="red"
+        a.style.backgroundColor="black" // camel case
+
+        // 4. event Listener
+        a.addEventListener('click',function(){
+            console.log('click');
+            a.innerHTML="change with event"
+            a.style.color='yellow'
+        })
+
+        var  bulb = document.querySelector('#bulb')
+        var btn = document.querySelector('button')
+
+        var flag=0
+
+        btn.addEventListener('click',function(){
+            if(flag==0){
+                bulb.style.backgroundColor='yellow'
+                flag=1
+            }
+            else{
+                bulb.style.backgroundColor='white'
+                flag=0
+            }
+        })
+
+        // multiple events ✔
+
+
+        // selecting multiple elements at a same time ✔
+        var h = document.querySelector('h1')
+        var all = document.querySelectorAll('h1')
+        console.log(all);
+
+        all.forEach(function(e){
+            console.log(e);
+        })
+
+        var box = document.querySelector('#box')
+        box.innerHTML='<h1>hi</h1>'
+        box.textContent='<h1>text content</h1>'
+
+
+        // setTimeout ✔
+        // setInterval ✔
+        // futute projects ✔
+
+
+
+
+    </script>
+</body>
+</html>
+

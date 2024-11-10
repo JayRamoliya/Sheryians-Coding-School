@@ -1,0 +1,138 @@
+/* CSS Crash Course_ Master the Essentials in One Video_ Elevate Your Front-End Skills Now */
+
+/* under standing css */
+
+/* making css file */
+
+/* under standing linking */
+
+/* css boilerplate */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* under standing writing way
+element{
+    code
+}
+*/
+
+/* under standing width height */
+#main{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+/* under standing units, px and % 
+px -> 
+% ->
+*/
+
+#container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* under standing 
+margin -> two element between yaa outside (top,right,bottom,left) | (top-bottom , right-left)
+
+padding ->one element inside (top,right,bottom,left) | (top-bottom , right-left)
+*/
+
+#main{
+    margin: 10px;
+    padding: 20px;
+}
+
+/* under standing background  image and things related to it  */
+
+body{
+    background-image: url('logo.PNG');
+    background-size: cover;
+    background-position: center;
+}
+
+/* under standing position 
+absolute -> element up side layer 1 ma aave
+relative -> element inside move not outside
+position no lagavi to element move no thi sake
+*/
+
+#car-1{
+    width: 100px;
+    height: 120px;
+    background-color: aqua;
+    /* position: absolute; */
+}
+#car-2{
+    width: 110px;
+    height: 90px;
+    background-color: pink;
+    /* position: absolute; */
+}
+#car-3{
+    /* position: absolute; */
+    width: 130px;
+    height: 110px;
+    background-color: yellow;
+}
+
+#box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+}
+#mini-box{
+    position:absolute;
+    left: 50%; /* without relative try it outside the box */
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+#in-box{
+    position: absolute;
+    top:10%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+/* under standing 
+flexbox -> child element ne one line ma lavva 
+justify-content -> width (Aligns flex items along the main axis of the current line of the flex container.)
+
+align-items -> height (Aligns flex items along the cross axis of the current line of the flex container.)
+
+*/
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 500px;
+    height: 500px;
+    background-color: gold;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+.box2{
+    width: 130px;
+    height: 110px;
+    background-color: black;
+}
+.box3{
+    width: 130px;
+    height: 100px;
+    background-color: yellowgreen;
+}
