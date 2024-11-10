@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    /* jayre apde koi ne pan vh wh minimum hight dai tare teno koi pan childern ne % ma na aapi saki */
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#bottom{
+    width: 100%;
+    background-color: black;
+    min-height: 40vh;
+    display: flex;
+}
+#b1{
+    width: 25%;
+    min-height: inherit;
+}
+#b2{
+    width: 25%;
+    background-color: #fff;
+    background-size: cover;
+    min-height: inherit;
+}
+#b3{
+    width: 20%;
+    min-height: inherit;
+}
+.top{
+    width: 100%;
+    min-height: 20vh;
+    background-color: purple;
+    padding: 20px;
+}
+.top p{
+    font-size: 15px;
+    margin-top: 12px;
+}
+.bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-size: cover;
+}
+#b4{
+    width: 30%;
+    background-color: #444;
+    color: white;
+    min-height: inherit;
+}
+#text{
+    width: 100%;
+    position: absolute;
+    padding: 0 10vw;
+    display: flex;
+    bottom: 20%;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+#text h1{
+    font-size: 5vw;
+    font-weight: 500;
+}
+#tright{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#tright p{
+    font-size: 16px;
+    width: 40%;
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(66, 45, 45, 0.313);
+}
+#icon{
+    display: flex;
+}
+#icon div{
+    padding: 4px;
+}
+
+.notf{
+    margin-top:20px;
+    display:flex;
+    justify-content: space-around;
+}
+.notf #photo{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+.notf p{
+    width: 70%;
+    font-size: 16px;
+}
+#b4 h3{
+    padding:5% 5%;
+}
+
+#b1{
+    padding: 30px;
+}
+#b1 p{
+    font-size: 12px;
+    margin-top: 20px;
+} 
+
+@media(max-width:500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #tright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #tright #icon{
+        margin-top: 30px;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+    #overlay #text #tright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #b1{
+        width: 100%;
+    }
+    #b2{
+        width: 100%;
+    }
+    #b3{
+        width: 100%;
+        flex-direction: column;
+    }
+    #b4{
+        width: 100%;
+    }
+    
+}
