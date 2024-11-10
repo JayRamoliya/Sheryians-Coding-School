@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <!-- Element to contain animated typing -->
+    <span id="element"></span>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            // Waits 1000ms after typing "First"
+            strings: ['<i>First</i> ^1000 sentence.', '&amp; a second sentence.'],
+            smartBackspace: true, // Default value
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!-- Learn Complete Typed JS in One Video (Hindi) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    
+    <div id="mydivid">
+        <div>jay ramoliya</div>
+        <div>sneh ramoliya</div>
+    </div>
+    <span id="ex1"></span>
+
+    <br>
+    <br>
+    <span id="ex2"></span>
+
+    <br>
+    <br>
+    <div>
+        <h1>ramoliya <span id="ex3"></span></h1>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <h1>ramoliya <span id="ex4"></span></h1>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <input type="text" id="ex5" placeholder="">
+    </div>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        let ex1 = new Typed('#ex1',{
+            stringsElement: '#mydivid',
+            typeSpeed: 35,
+            backSpeed:40,
+            backDelay: 600,
+            loop: true
+        })
+        let ex5 = new Typed('#ex5',{
+            strings: ['enter your name','enter your age','enter your email','enter your password'],
+            typeSpeed: 35,
+            backSpeed:40,
+            backDelay: 600,
+            loop: true,
+            attr:'placeholder',
+            // smartBackspace:false
+        })
+
+        let ex2 = new Typed('#ex2',{
+            strings: ['ramoliya jay ^2000','jay','sneh','manav'],
+            typeSpeed: 35,
+            backSpeed:50,
+            backDelay: 600,
+            loop: true
+        })
+
+        let ex3 = new Typed('#ex3',{
+            strings: ['jay','prince','sneh','manav'],
+            typeSpeed: 35,
+            backSpeed:50,
+            backDelay: 600,
+            loop: true
+        })
+
+        let ex4 = new Typed('#ex4',{
+            strings: ['jay','prince','sneh','manav'],
+            typeSpeed: 100,
+            backSpeed:50,
+
+            backDelay: 600,
+            startDelay: 800,
+
+            showCursor: true,
+            cursorChar: "➡",
+
+            fadeOut:true,
+            fadeOutDealy:1000,
+
+            loop: true,
+
+            shuffle:true,
+
+            smartBackspace:false
+        })
+
+        
+
+
+    </script>
+</body>
+
+</html>

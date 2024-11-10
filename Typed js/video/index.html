@@ -1,0 +1,56 @@
+<!-- Text Typing Animation On Website Using HTML, CSS And JS | Auto Typing Effect on Website -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            width: 100%;
+            height: 100vh;
+            background-color: #2b323c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main h2{
+            font-size: 50px;
+            font-weight: 600;
+
+        }
+        span{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2>My <span class="main"></span></h2>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var type = new Typed('.main',{
+            strings:['name is a Jay Ramoliya','age is 21',''],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+    </script>
+</body>
+</html>
+

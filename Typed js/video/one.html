@@ -1,0 +1,33 @@
+<!-- Typed.js Tutorial in 3 Minutes -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <span id=""></span>
+    <h1 id="typed"></h1>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // Setup typed js options
+        var options = {
+            strings: ["न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपा |", "न चैव न भविष्याम: सर्वे वयमत: परम्"],
+            typeSpeed: 25,
+            backSpeed: 0,
+            loop: true,
+            showCursor: false
+        };
+        // Apply the options to the element with id 'typed'
+        new Typed('#typed', options);
+    </script>
+</body>
+
+</html>

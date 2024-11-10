@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typed.js Animation</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        #main {
+            width: 100%;
+            height: 100vh;
+            background-color: #2b323c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main"></div>
+
+    <script>
+        // JavaScript code to initialize Typed.js
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                strings: ["Hello, World!", "Welcome to Typed.js", "Let's create animations!"],
+                typeSpeed: 50, // typing speed in milliseconds
+                backSpeed: 25, // backspacing speed in milliseconds
+                startDelay: 1000, // delay before starting the animation in milliseconds
+                backDelay: 1000, // delay before backspacing in milliseconds
+                loop: true // loop the animation
+            };
+
+            var typed = new Typed("#main", options);
+        });
+
+    </script>
+</body>
+
+</html>
